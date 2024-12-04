@@ -886,6 +886,10 @@ video {
     height: 100%;
   }
 
+  .md\:h-auto {
+    height: auto;
+  }
+
   .md\:max-w-\[632px\] {
     max-width: 632px;
   }
