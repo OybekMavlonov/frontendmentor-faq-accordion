@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <title>Frontend Mentor | FAQ accordion</title>
+
+    <link href="tailwind.css" rel="stylesheet">
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+<body class="">
+<div class="h-screen flex flex-col">
+    <div class="md:bg-[url('./assets/images/background-pattern-desktop.svg')] bg-[url('./assets/images/background-pattern-mobile.svg')] h-[40%] bg-cover bg-center"></div>
+    <div class="h-[60%] bg-pink"></div>
+    <main class="max-h-[88vh] md:h-full overflow-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+        bg-white md:max-w-[632px] w-9/12 rounded-2xl shadow-lg md:p-10 p-6">
+        <div class="flex items-center gap-5">
+            <img class="rounded-xl" src="./assets/images/icon-star.svg" alt="icon-star">
+            <h1 class="font-worksans font-bold sm:text-6xl text-3xl text-purple-800">FAQs</h1>
+        </div>
+        <ul class="faq-list sm:mt-4">
+            <li class="faq-list__item border-b border-pink  cursor-pointer hover:text-purple-600 group">
+                <div class="flex items-center justify-between gap-5 py-6">
+                    <h3 class="font-worksans font-semibold text-purple-800 text-xl group-hover:text-purple-600">What is
+                        Frontend Mentor, and how will it help me?</h3>
+                    <img class="plus-icon" src="./assets/images/icon-plus.svg" alt="plus-icon">
+                    <img class="minus-icon hidden" src="./assets/images/icon-minus.svg" alt="minus-icon">
+                </div>
+
+                <div class="answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out
+                font-worksans font-medium text-md text-purple-500">
+                    <div class="pb-5">
+                        Frontend Mentor offers realistic coding challenges to help developers improve their frontend
+                        coding
+                        skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for
+                        portfolio building.
+                    </div>
+                </div>
+            </li>
+            <li class="faq-list__item border-b border-pink cursor-pointer hover:text-purple-600 group">
+                <div class="flex items-center justify-between gap-5 py-6">
+                    <h3 class="font-worksans font-semibold text-purple-800 text-lg group-hover:text-purple-600">Is
+                        Frontend Mentor free?</h3>
+                    <img class="plus-icon" src="./assets/images/icon-plus.svg" alt="plus-icon">
+                    <img class="minus-icon hidden" src="./assets/images/icon-minus.svg" alt="minus-icon">
+                </div>
+                <div class="answer max-h-0 overflow-hidden transition-all duration-500 ease-out
+                font-worksans font-medium text-md text-purple-500">
+                    <div class="pb-5">Yes, Frontend Mentor
+                        offers both free and premium coding challenges, with the free
+                        option providing access to a range of projects suitable for all skill levels.
+                    </div>
+                </div>
+            </li>
+            <li class="faq-list__item border-b border-pink cursor-pointer hover:text-purple-600 group">
+                <div class="flex items-center justify-between gap-5 py-6">
+                    <h3 class="font-worksans font-semibold text-purple-800 text-lg group-hover:text-purple-600">Can I
+                        use Frontend Mentor projects in my portfolio?</h3>
+                    <img class="plus-icon" src="./assets/images/icon-plus.svg" alt="plus-icon">
+                    <img class="minus-icon hidden" src="./assets/images/icon-minus.svg" alt="minus-icon">
+                </div>
+                <div class="answer max-h-0 overflow-hidden transition-all duration-300 ease-out
+                 font-worksans font-medium text-md text-purple-500">
+                    <div class="pb-5">
+                        Yes, you can use
+                        projects completed on Frontend Mentor in your portfolio. It's an excellent
+                        way to showcase your skills to potential employers!
+                    </div>
+                </div>
+            </li>
+            <li class="faq-list__item cursor-pointer hover:text-purple-600 group">
+                <div class="flex items-center justify-between gap-5 pt-6">
+                    <h3 class="font-worksans font-semibold text-purple-800 text-lg group-hover:text-purple-600">How can
+                        I get help if I'm stuck on a Frontend Mentor challenge?</h3>
+                    <img class="plus-icon" src="./assets/images/icon-plus.svg" alt="plus-icon">
+                    <img class="minus-icon hidden" src="./assets/images/icon-minus.svg" alt="minus-icon">
+                </div>
+                <div class="answer max-h-0 overflow-hidden transition-all duration-300 ease-out
+                font-worksans font-medium text-md text-purple-500">
+                    The best place to get
+                    help is inside Frontend Mentor's Discord community. There's a help
+                    channel where you can ask questions and seek support from other community members.
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <div class="attribution absolute bottom-2 left-1/2 transform -translate-x-1/2 text-sm text-gray-700">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-gray-800 underline">Frontend
+        Mentor</a>.
+        Coded by <a href="https://github.com/OybekMavlonov/frontendmentor-faq-accordion" target="_blank"
+                    class="text-gray-800 underline">Oybek</a>.
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
